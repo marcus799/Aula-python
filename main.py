@@ -1,41 +1,21 @@
-def somar(num1 , num2):
-    soma = num1 + num2
-    return soma
+def gastos_dos_usuarios():
+    #nome dos usuarios
+    nome1 = input("Digite o seu nome: ")
+    nome2 = input("\nDigite o seu nome: ")
 
-def subtrair(num1 , num2):
-    subtraçao = num1 - num2
-    return subtraçao
+    #gastos dos usuarios
+    gastos_nome1 = int(input(f"\nDigite os seus gastos {nome1}: "))
+    gastos_nome2 = int(input(f"\nDigite os seus gastos {nome2}: "))
 
-def multiplicar(num1 ,num2):
-    multiplicaçao = num1 * num2
-    return multiplicaçao
+    #verificaçao dos gastos
+    if gastos_nome1 > gastos_nome2:
+        print(f"\nOs gastos de {nome1} foram maiores que os de {nome2}")
 
-def dividir(num1 , num2):
-    if num2 == 0 or num1 == 0:
-        return "Erro: Divisao por zero"
-    divisao = num1 / num2
-    return round(divisao, 1)
+    elif gastos_nome2 > gastos_nome1:
+        print(f"\nOs gastos de {nome2} foram maiores que os de {nome1}")
 
-operaçao = input("digite a operaçao soma, multiplicaçao, divisao ou subtraçao: ")
-num1 = int(input("Digite o primeiro numero: "))
-num2 = int(input("Digite o segundo numero: "))
+    else:
+        print(f"\nos gastos de {nome1} e os gastos de {nome2} foram iguais")
 
 
-if operaçao.lower() == "soma":
-    soma = somar(num1 , num2)
-    print(f"A soma de {num1} e {num2} é igual a {soma}")
-
-elif operaçao.lower() == "subtraçao":
-    subtraçao = subtrair(num1 , num2)
-    print(f"A subtraçao de {num1} e {num2} é igual a {subtraçao}")
-
-elif operaçao.lower() == "multiplicaçao":
-    multiplicaçao = multiplicar(num1 , num2)
-    print(f"A multiplicaçao de {num1} e {num2} é igual a {multiplicaçao}")
-
-elif operaçao.lower() == "divisao":
-    divisao = dividir(num1 , num2)
-    print(f"A divisao de {num1} e {num2} é igual a {divisao}")
-    
-else:
-    print("Digite uma operaçao valida")
+gastos_dos_usuarios()

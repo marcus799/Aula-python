@@ -24,7 +24,7 @@ def pesquisar_aluno():
 
 def excluir_todos():
     comfirmaçao = input("Tem certeza que deseja excluir? (s/n)\n")
-    if comfirmaçao.lower == 's' or comfirmaçao.lower == 'sim':
+    if comfirmaçao.lower() == 's' or comfirmaçao.lower() == 'sim':
         alunos.clear()
         print("Todos alunos removidos com sucesso")
 
@@ -40,8 +40,8 @@ def excluir_aluno():
 
 
 alunos = []
-while True:
 
+while True:
     print("Digite 1 para cadastrar\nDigite 2 para listar\nDigite 3 para excluir\nDigite 4 para pesquisar\nDigite 5 para excluir todos\nDigite 6 para encerrar\n")
     opçao = int(input("Digite a opçao desejada: "))
 
@@ -66,7 +66,7 @@ while True:
 
 
 
-    #cadastro de produtos
+#cadastro de produtos
 produtos = []
 
 def cadastrar_produtos():
@@ -102,7 +102,7 @@ def pesquisar_produto():
 
 def excluir_todos():
     comfirmaçao = input("Tem certeza que deseja excluir?(s/n)\n")
-    if comfirmaçao.lower == 's' or comfirmaçao.lower == 'sim':
+    if comfirmaçao.lower() == 's' or comfirmaçao.lower() == 'sim':
         produtos.clear()
         print("Todos produtos removidos com sucesso")
 
