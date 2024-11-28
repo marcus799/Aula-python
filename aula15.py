@@ -57,26 +57,11 @@ def atualizar_jogador():
         conn.commit()
         print("pontuaçao atualizada com sucesso!")
 
-while True:
-    print("Digite 1 para cadastrar 2 para listar 3 para deletar 4 para atualizar e 5 para encerrar o programa")
-    opçao = int(input("Digite a opçao: "))
 
-    if opçao == 1:
-        cadastrar_jogador()
-        print("Jogador cadastrado com sucesso!")
 
-    elif opçao == 2:
-        listar_jogador()
-        
-    elif opçao == 3:
-        deletar_jogador()
-
-    elif opçao == 4:    
-        atualizar_jogador()
-
-    elif opçao == 5:
-        print("Programa encerrado!")
-        break
-
-    else:
-        print("Digite uma opçao valida")
+#cadastrar_jogador()
+#listar_jogador()
+#deletar_jogador()
+listar_jogador()
+atualizar_jogador()
+listar_jogador()
