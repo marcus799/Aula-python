@@ -38,23 +38,21 @@ def deletar_aluno():
     print("Deletado com sucesso")
 
 def atualizar_nome():
-    nome = input("Digite o nome que voce quer atualizar: ")
+    nome = input("Digite o nome que você quer atualizar: ")
     check_query = "select * from aluno where nome = %s"
-    cursor.execute(check_query,(nome,))
-    alunos = cursor.fetchone()
-    if alunos:
+    cursor.execute(check_query, (nome,))
+    aluno = cursor.fetchone()
+    if aluno:
         nome_atualizado = input("Digite o novo nome: ")
-        update_query = "update aluno set nome = %s where aluno = %s "
+        update_query = "update aluno set nome = %s where nome = %s"
         update_values = (nome_atualizado, nome)
         cursor.execute(update_query, update_values)
         conn.commit()
         print("Nome atualizado com sucesso!")
-
     else:
-        print("Aluno nao encontrado")
+        print("Aluno não encontrado.")
 
-
-cadastrar_aluno()
+#cadastrar_aluno()
 listar_alunos()
 #deletar_aluno()
 atualizar_nome()
