@@ -56,6 +56,10 @@ def atualizar_jogador():
         cursor.execute(update_query,(nova_pontuaçao,id_jogador))
         conn.commit()
         print("pontuaçao atualizada com sucesso!")
+        
+    else:
+        print("Digite um numero valido")
+        atualizar_jogador()
 
 while True:
     print("Digite 1 para cadastrar 2 para listar 3 para deletar 4 para atualizar e 5 para encerrar o programa")
