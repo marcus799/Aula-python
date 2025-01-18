@@ -1,29 +1,25 @@
-operaçao = input("Digite a operaçao: ")
 
-if operaçao.lower() == 'soma':
+while True:
     num1 = int(input("Digite o primeiro numero: "))
     num2 = int(input("Digite o segundo numero: "))
 
-    resultado = num1 + num2
-    print("resultado da soma:", resultado)
+    operaçao = input("Digite a operaçao: ")
 
-elif operaçao.lower() == 'subtraçao':
-    num1 = int(input("Digite o primeiro numero: "))
-    num2 = int(input("Digite o segundo numero: "))
+    if operaçao.lower() == 'soma':
+        print(f"o resultado da operaçao é {num1 + num2}")
+        break
 
-    resultado = num1 - num2
-    print("O resultado da subtraçao é:", resultado)
+    elif operaçao.lower() == 'subtraçao':
+        print(f"o resultado da operaçao é {num1 - num2}")
+        break
 
-elif operaçao.lower() == 'multiplicaçao':
-    num1 = int(input("Digite o primeiro numero: "))
-    num2 = int(input("Digite o segundo numero: "))
+    elif operaçao.lower() == 'multiplicaçao':
+        print(f"o resultado da operaçao é {num1 * num2}")
+        break
 
-    resultado = num1 * num2
-    print("O resultado da multiplicaçao é:", resultado)
+    elif operaçao.lower() == 'divisao':
+        print(f"o resultado da operaçao é {num1 / num2}")
+        break
 
-elif operaçao.lower() == 'divisao':
-    num1 = int(input("Digite o primeiro numero: "))
-    num2 = int(input("Digite o segundo numero: "))
-
-    resultado = num1 / num2
-    print("O resultado da divisao é:", resultado)
+    else:
+        print("Digite uma operaçao valida")
