@@ -29,7 +29,7 @@ def listar_jogador():
 
     for linha in resultados:
             id, nome, pontuacao, vida = linha
-            print(f"ID: {id}, Nome: {nome}, Pontuação: {pontuacao}, Vida: {vida}")
+            print(f"ID: {id}, Nome: {nome}, Pontuação: {pontuacao}, Vida: {vida}")
 
 
 def deletar_jogador():
