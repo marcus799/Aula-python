@@ -13,6 +13,7 @@ elif(media>=4.1 and media<=6.9):
 else:
     print("Reprovado")
 
+
 peso = float(input("Digite o peso: "))
 altura = float(input("Digite a altura: "))
 
@@ -30,6 +31,7 @@ elif (IMC>25.0 and IMC<29.99):
 else:
     print("obesidade")
     
+
 idade = int(input("Digite a idade: "))
 
 if(idade<=12):
@@ -43,6 +45,7 @@ elif (idade<59):
 
 else:
     print("idoso")
+
 
 salario = int(input("Digite a quantidade de salarios minimos que voce ganha: "))
 
