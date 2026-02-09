@@ -1,25 +1,30 @@
-'''
-def mostrar_nome():
-    nome = input("Digite seu nome: ")
-    print("Seu nome é:", nome)
 
-mostrar_nome()
+def soma():
+    A = int(input("Digite o valor de A: "))
+    B = int(input("Digite o valor de B: "))
+    C = int(input("Digite o valor de C: "))
 
-def somar():
-    a = int(input("Digite o primeiro número: "))
-    b = int(input("Digite o segundo número: "))        
-    resultado = a + b
-    print("O resultado da soma é:", resultado)
+    soma = A + B
+    print(f"A soma entre A e B é: {soma}")
 
-somar()
-'''
-numeros = [2, 4, 6, 8]
+    if soma < C:
+        print("A soma é menor que C.")
+    else:
+        print("A soma é maior ou igual a C.")
 
-def contar_numeros(lista):
-    contador = 0 
-    for numero in lista:
-       print("Número:", numero)
-       contador = contador + 1
-    return contador
+print(soma())
 
-print("Quantidade:", contar_numeros(numeros))
+
+
+def soma_iguais():
+    A = int(input("\nDigite o valor de A: "))
+    B = int(input("Digite o valor de B: "))
+
+    if A == B:
+        soma = A + B
+        print(f"A soma dos valores iguais A e B é: {soma}")
+
+    else:
+        print(f"A soma so acontecerá se os valores de A e B forem iguais. A: {A}, B: {B}")
+
+print(soma_iguais())
