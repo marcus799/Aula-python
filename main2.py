@@ -9,8 +9,12 @@ def soma():
 
     if soma < C:
         print("A soma é menor que C.")
+
+    elif soma == C:
+        print("A soma é igual a C.")
+
     else:
-        print("A soma é maior ou igual a C.")
+        print("A soma é maior que C.")
 
 print(soma())
 
